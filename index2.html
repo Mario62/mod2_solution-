@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\hp\Desktop\ass 2 3\style.css">
+</head>
+<body>
+    <style>.body{
+        grid-template-columns: (3,1fr);
+    }
+    
+    
+    
+    
+    
+    
+    
+    .h{
+        text-align: center;
+        font-size: 3.6em;
+         font: 600;
+    }
+    
+    .chicken {
+        background-color: rgb(255, 6, 6);
+        text-align: right;
+        border: 1px, solid, black;
+        border-style:solid ;
+        margin-left: 75%;
+        text-align: center;
+    }
+    
+    .beef{
+        background-color: aqua;
+        text-align: right;
+        border: 1px, solid, black;
+        border-style:solid ;
+        margin-left: 85%;
+        text-align: center;
+    }
+    
+    
+    .sushi{
+        background-color: yellow;
+        text-align: right;
+        border: 1px, solid, black;
+        border-style:solid ;
+        margin-left: 85%;
+        text-align: center;
+    }
+    
+    .col{
+        background-color: rgb(112, 111, 111);
+        width: 29%;
+        height: 250px;
+        border-style: 5px,  solid , rgb(0, 0, 0);
+        margin: 5px;
+        padding-bottom: 20px;
+        padding: 10px;
+        text-align: left;
+        display:inline-block;
+        border-style:solid ;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: auto;
+    
+    }
+    .p{
+        position: absolute;
+    }
+    @media only screen and (max-width: 992px) {
+        .row {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+       .col:last-child {
+            width: 100%;
+            margin-top: 30px;
+            margin-right: 0;
+        }
+        .col:nth-child(2) {
+            margin-right: 0;
+        }
+        .col {
+            width: 46%;
+            margin: 0;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .row{
+            display: block;
+        }
+        .col {
+            width: 100%;
+        }
+        .col:nth-child(2) {
+            margin-top: 30px;
+        }
+    }
+    </style>
+    <h1 class="h">Our Menu</h1>
+    <div class="row">
+    <section class="col"> 
+        <div>
+            <h2 class="chicken ">Chicken  </h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, non quae consectetur quam aperiam,
+            excepturi, natus ut tenetur eius architecto itaque eum minima laborum recusandae cum similique quo
+            doloremque atque consequatur. Vel, ad obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Eum tempore sunt autem. Quasi pariatur voluptatibus officiis natus alias repudiandae facilis
+            nisi commodi magni aliquid placeat quo, voluptates maxime consequatur aliquam.        </div>
+    </section>
+
+    <section class="col"> 
+        <div>
+            <h2 class="beef">Beef </h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, non quae consectetur quam aperiam,
+            excepturi, natus ut tenetur eius architecto itaque eum minima laborum recusandae cum similique quo
+            doloremque atque consequatur. Vel, ad obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Eum tempore sunt autem. Quasi pariatur voluptatibus officiis natus alias repudiandae facilis
+            nisi commodi magni aliquid placeat quo, voluptates maxime consequatur aliquam.        </div>
+    </section>
+
+    <section class="col"> 
+        <div>
+            <h2  class="sushi">Sushi </h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, non quae consectetur quam aperiam,
+            excepturi, natus ut tenetur eius architecto itaque eum minima laborum recusandae cum similique quo
+            doloremque atque consequatur. Vel, ad obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Eum tempore sunt autem. Quasi pariatur voluptatibus officiis natus alias repudiandae facilis
+            nisi commodi magni aliquid placeat quo, voluptates maxime consequatur aliquam.        </div>
+    </section>
+</div>
+</body>
+</html>
